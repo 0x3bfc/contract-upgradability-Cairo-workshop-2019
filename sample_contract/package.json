@@ -1,0 +1,14 @@
+{
+  "name": "sample_contract",
+  "version": "1.0.0",
+  "description": "This is a sample solidity contract which shows the contract structure.",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ahmed Ali <ahmedaabdulwahed@gmail.com>",
+  "license": "ISC"
+}
