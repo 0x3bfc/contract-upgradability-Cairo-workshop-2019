@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38b44bdb-cebd-4866-91e1-fe1c5bdb4129" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/sample_contract/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_contract/build/contracts/Migrations.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_contract/build/contracts/Ownable.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_contract/build/contracts/SampleContract.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_contract/contracts/Migrations.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_contract/contracts/SampleContract.sol" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_contract/migrations/1_initial_migration.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_contract/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_contract/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_contract/truffle-config.js" beforeDir="false" />
-    </list>
+    <list default="true" id="38b44bdb-cebd-4866-91e1-fe1c5bdb4129" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,16 +19,40 @@
         <entry file="file://$PROJECT_DIR$/labs/data_locations/contracts/PlayWithDataLocations.sol">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labs/data_locations/truffle-config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labs/eternal_storage/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret column="25" selection-start-column="25" selection-end-column="25" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/labs/data_locations/truffle-config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+        <entry file="file://$PROJECT_DIR$/labs/data_locations/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret column="24" selection-start-column="24" selection-end-column="24" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -58,6 +71,8 @@
         <option value="$PROJECT_DIR$/sample_contract/contracts/SampleContract.sol" />
         <option value="$PROJECT_DIR$/labs/data_locations/contracts/PlayWithDataLocations.sol" />
         <option value="$PROJECT_DIR$/labs/data_locations/truffle-config.js" />
+        <option value="$PROJECT_DIR$/labs/eternal_storage/README.md" />
+        <option value="$PROJECT_DIR$/labs/data_locations/README.md" />
       </list>
     </option>
   </component>
@@ -88,27 +103,7 @@
               <item name="contract-upgradability-tiec-workshop" type="b2602c69:ProjectViewProjectNode" />
               <item name="contract-upgradability-tiec-workshop" type="462c0819:PsiDirectoryNode" />
               <item name="labs" type="462c0819:PsiDirectoryNode" />
-              <item name="data_locations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="contract-upgradability-tiec-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="contract-upgradability-tiec-workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="labs" type="462c0819:PsiDirectoryNode" />
-              <item name="data_locations" type="462c0819:PsiDirectoryNode" />
-              <item name="contracts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="contract-upgradability-tiec-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="contract-upgradability-tiec-workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="labs" type="462c0819:PsiDirectoryNode" />
-              <item name="sample_contract" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="contract-upgradability-tiec-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="contract-upgradability-tiec-workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="labs" type="462c0819:PsiDirectoryNode" />
-              <item name="sample_contract" type="462c0819:PsiDirectoryNode" />
-              <item name="contracts" type="462c0819:PsiDirectoryNode" />
+              <item name="eternal_storage" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -117,7 +112,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555105134308" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555109117011" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -214,7 +209,7 @@
     <entry file="file://$PROJECT_DIR$/labs/data_locations/contracts/PlayWithDataLocations.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -222,6 +217,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labs/eternal_storage/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="25" selection-start-column="25" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labs/data_locations/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="24" selection-start-column="24" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
