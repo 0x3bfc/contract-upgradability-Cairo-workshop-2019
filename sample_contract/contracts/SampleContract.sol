@@ -1,6 +1,7 @@
 pragma solidity 0.5.3;
 
-import 'https://github.com/openzeppelin/openzeppelin-solidity/contracts/ownership/Ownable.sol';
+// import 'https://github.com/openzeppelin/openzeppelin-solidity/contracts/ownership/Ownable.sol';
+import 'openzeppelin-solidity/contracts/ownership/Ownable.sol';
 
 contract SampleContract is Ownable {
     // state variables
