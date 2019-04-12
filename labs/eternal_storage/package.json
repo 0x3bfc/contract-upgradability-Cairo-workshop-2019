@@ -10,5 +10,8 @@
     "test": "truffle test"
   },
   "author": "Ahmed Ali <ahmedaabdulwahed@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "openzeppelin-solidity": "2.2.0"
+  }
 }
