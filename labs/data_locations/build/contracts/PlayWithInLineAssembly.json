@@ -1,0 +1,393 @@
+{
+  "contractName": "PlayWithInLineAssembly",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_a",
+          "type": "uint256"
+        },
+        {
+          "name": "_b",
+          "type": "uint256"
+        }
+      ],
+      "name": "add",
+      "outputs": [
+        {
+          "name": "result",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060de8061001f6000396000f300608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063771602f7146044575b600080fd5b348015604f57600080fd5b5060766004803603810190808035906020019092919080359060200190929190505050608c565b6040518082815260200191505060405180910390f35b6000604051602081016020600483376020806004018237805182510192505050929150505600a165627a7a723058209db7ba43a7a3bb117e87ef411ff98f21baeadc39a6ce7c4f66f737aa8cf66db40029",
+  "deployedBytecode": "0x608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063771602f7146044575b600080fd5b348015604f57600080fd5b5060766004803603810190808035906020019092919080359060200190929190505050608c565b6040518082815260200191505060405180910390f35b6000604051602081016020600483376020806004018237805182510192505050929150505600a165627a7a723058209db7ba43a7a3bb117e87ef411ff98f21baeadc39a6ce7c4f66f737aa8cf66db40029",
+  "sourceMap": "26:875:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:875:1;;;;;;;",
+  "deployedSourceMap": "26:875:1:-;;;;;;;;;;;;;;;;;;;;;;;;64:835;;8:9:-1;5:2;;;30:1;27;20:12;5:2;64:835:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;128:14;339:4;333:11;447:2;441:4;437:13;577:2;574:1;568:4;555:25;708:2;703;700:1;696:10;690:4;677:34;822:4;816:11;809:4;803:11;799:29;789:39;;175:718;;;;;;:::o",
+  "source": "pragma solidity ^0.4.25;\n\ncontract PlayWithInLineAssembly {\n    function add(uint256 _a, uint256 _b) public pure\n      returns (uint256 result)\n        {\n            assembly {\n              // Solidity always stores a free memory pointer at position 0x40\n              // load into stack from memory @0x40\n              let aPtr := mload(0x40)\n              // increment bPtr by adding 32 bytes offset to 0x40\n              let bPtr := add(aPtr, 32)\n              // copy call data (_a) into memory: after first 4 bytes (function selector)\n              calldatacopy(aPtr, 4, 32)\n              // copy call data (_b) into memory: after first (4bytes + 32 bytes)\n              calldatacopy(bPtr, add(4, 32), 32)\n              // load data (aPtr, bPtr) from memory into stack\n              result := add(mload(aPtr), mload(bPtr)) // sum two data values and assign the output to result\n        }\n    }\n}",
+  "sourcePath": "/Users/ahmed/Desktop/code/workshops/contract-upgradability-tiec-workshop/labs/data_locations/contracts/PlayWithDataLocations.sol",
+  "ast": {
+    "absolutePath": "/Users/ahmed/Desktop/code/workshops/contract-upgradability-tiec-workshop/labs/data_locations/contracts/PlayWithDataLocations.sol",
+    "exportedSymbols": {
+      "PlayWithInLineAssembly": [
+        70
+      ]
+    },
+    "id": 71,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".25"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 70,
+        "linearizedBaseContracts": [
+          70
+        ],
+        "name": "PlayWithInLineAssembly",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 68,
+              "nodeType": "Block",
+              "src": "152:747:1",
+              "statements": [
+                {
+                  "externalReferences": [
+                    {
+                      "result": {
+                        "declaration": 65,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "789:6:1",
+                        "valueSize": 1
+                      }
+                    }
+                  ],
+                  "id": 67,
+                  "nodeType": "InlineAssembly",
+                  "operations": "{\n    let aPtr := mload(0x40)\n    let bPtr := add(aPtr, 32)\n    calldatacopy(aPtr, 4, 32)\n    calldatacopy(bPtr, add(4, 32), 32)\n    result := add(mload(aPtr), mload(bPtr))\n}",
+                  "src": "166:733:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 69,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "add",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 63,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60,
+                  "name": "_a",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 69,
+                  "src": "77:10:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 59,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "77:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 62,
+                  "name": "_b",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 69,
+                  "src": "89:10:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 61,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "89:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "76:24:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 66,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 65,
+                  "name": "result",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 69,
+                  "src": "128:14:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 64,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "128:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "127:16:1"
+            },
+            "scope": 70,
+            "src": "64:835:1",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 71,
+        "src": "26:875:1"
+      }
+    ],
+    "src": "0:901:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/ahmed/Desktop/code/workshops/contract-upgradability-tiec-workshop/labs/data_locations/contracts/PlayWithDataLocations.sol",
+    "exportedSymbols": {
+      "PlayWithInLineAssembly": [
+        70
+      ]
+    },
+    "id": 71,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".25"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 70,
+        "linearizedBaseContracts": [
+          70
+        ],
+        "name": "PlayWithInLineAssembly",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 68,
+              "nodeType": "Block",
+              "src": "152:747:1",
+              "statements": [
+                {
+                  "externalReferences": [
+                    {
+                      "result": {
+                        "declaration": 65,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "789:6:1",
+                        "valueSize": 1
+                      }
+                    }
+                  ],
+                  "id": 67,
+                  "nodeType": "InlineAssembly",
+                  "operations": "{\n    let aPtr := mload(0x40)\n    let bPtr := add(aPtr, 32)\n    calldatacopy(aPtr, 4, 32)\n    calldatacopy(bPtr, add(4, 32), 32)\n    result := add(mload(aPtr), mload(bPtr))\n}",
+                  "src": "166:733:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 69,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "add",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 63,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60,
+                  "name": "_a",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 69,
+                  "src": "77:10:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 59,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "77:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 62,
+                  "name": "_b",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 69,
+                  "src": "89:10:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 61,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "89:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "76:24:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 66,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 65,
+                  "name": "result",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 69,
+                  "src": "128:14:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 64,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "128:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "127:16:1"
+            },
+            "scope": 70,
+            "src": "64:835:1",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 71,
+        "src": "26:875:1"
+      }
+    ],
+    "src": "0:901:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.25+commit.59dbf8f1.Linux.g++"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.2",
+  "updatedAt": "2019-04-12T21:39:07.014Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
