@@ -1,0 +1,14 @@
+{
+  "name": "safe_delegatecall_proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test"
+  },
+  "author": "Ahmed Ali <ahmedaabdulwahed@gmail.com>",
+  "license": "ISC"
+}
