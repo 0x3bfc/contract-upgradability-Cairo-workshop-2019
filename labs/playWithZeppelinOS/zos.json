@@ -2,5 +2,7 @@
   "zosversion": "2.2",
   "name": "playWithZOS",
   "version": "0.1.0",
-  "contracts": {}
+  "contracts": {
+    "SampleContract": "SampleContract"
+  }
 }

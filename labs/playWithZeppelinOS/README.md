@@ -4,7 +4,7 @@
 ```bash
 $ npm install truffle@5.0.4
 $ npm install -g ganache-cli
-$ npm install zos
+$ npm install -g zos
 $ npm i
 ```
 

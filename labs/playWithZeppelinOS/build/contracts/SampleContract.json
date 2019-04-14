@@ -1220,11 +1220,18 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Linux.g++"
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "1555243474097": {
+      "links": {},
+      "events": {},
+      "address": "0x254dffcd3277C0b1660F6d42EFbB754edaBAbC2B",
+      "updated_at": 1555243988100
+    }
+  },
   "schemaVersion": "3.0.2",
-  "updatedAt": "2019-04-13T11:57:09.252Z",
+  "updatedAt": "2019-04-14T12:11:50.499Z",
   "devdoc": {
     "methods": {
       "initialize(address)": {
