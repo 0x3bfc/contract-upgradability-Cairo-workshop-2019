@@ -143,6 +143,7 @@ Updated zos.dev-1553721948227.json
 $ truffle console --network development
 truffle(development)> sampleContract = await SampleContract.at('0x3F5043B7FD0103464D4BAAcD697DAD13C81a2019')
 undefined
+truffle(development)> sampleContract.create()
 truffle(development)> sampleContract.getSender()
 '0xf42eFca71be3A9e1BBc776d187Cecc4c9Fa7e4C1'
 ```

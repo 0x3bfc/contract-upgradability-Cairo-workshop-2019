@@ -1,11 +1,11 @@
 {
   "contracts": {
     "SampleContract": {
-      "address": "0x5b1869D9A4C187F2EAa108f3062412ecf0526b24",
+      "address": "0xD833215cBcc3f914bD1C9ece3EE7BF8B14f841bb",
       "constructorCode": "608060405234801561001057600080fd5b506109b0806100206000396000f3fe",
-      "bodyBytecodeHash": "52f286ff4ba95133fbbf9099f47c6576eec8b62b9834680f3f3410f374f8136c",
+      "bodyBytecodeHash": "cc41eb0883c19ace89ad2fa847e1d914a8a9d95c883b1e9d69f5fc15e14e5dab",
       "localBytecodeHash": "56906bf831ea617fe8399e76776f880234dde5cd932eaf2f8c8c3c5a8690aaea",
-      "deployedBytecodeHash": "38a03e6ce4d12937df22da16a6c921220afd225bb4fd1633d2bc73e46662c799",
+      "deployedBytecodeHash": "7fb14b77d139219bc5e11ecdcbc43382014d443488df0c2461ce48ad9576819a",
       "types": {
         "t_bool": {
           "id": "t_bool",
@@ -54,7 +54,7 @@
           "contract": "Initializable",
           "path": "zos-lib/contracts/Initializable.sol",
           "label": "initialized",
-          "astId": 296,
+          "astId": 284,
           "type": "t_bool",
           "src": "757:24:5"
         },
@@ -62,7 +62,7 @@
           "contract": "Initializable",
           "path": "zos-lib/contracts/Initializable.sol",
           "label": "initializing",
-          "astId": 298,
+          "astId": 286,
           "type": "t_bool",
           "src": "876:25:5"
         },
@@ -70,7 +70,7 @@
           "contract": "Initializable",
           "path": "zos-lib/contracts/Initializable.sol",
           "label": "______gap",
-          "astId": 347,
+          "astId": 335,
           "type": "t_array:50<t_uint256>",
           "src": "1891:29:5"
         },
@@ -78,7 +78,7 @@
           "contract": "Ownable",
           "path": "openzeppelin-eth/contracts/ownership/Ownable.sol",
           "label": "_owner",
-          "astId": 180,
+          "astId": 168,
           "type": "t_address",
           "src": "302:22:4"
         },
@@ -86,7 +86,7 @@
           "contract": "Ownable",
           "path": "openzeppelin-eth/contracts/ownership/Ownable.sol",
           "label": "______gap",
-          "astId": 291,
+          "astId": 279,
           "type": "t_array:50<t_uint256>",
           "src": "2186:29:4"
         },
@@ -104,17 +104,28 @@
         "hasSelfDestruct": false,
         "hasDelegateCall": false,
         "hasInitialValuesInDeclarations": false,
-        "uninitializedBaseContracts": []
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [
+          {
+            "contract": "SampleContract",
+            "path": "contracts/SampleContract.sol",
+            "label": "samples",
+            "astId": 68,
+            "type": "t_struct<SampleLib.SampleStruct>",
+            "src": "244:30:1"
+          }
+        ],
+        "storageDiff": []
       }
     }
   },
   "solidityLibs": {
     "SampleLib": {
-      "address": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
-      "constructorCode": "610239610030600b82828239805160001a6073146000811461002057610022565bfe5b5030600052607381538281f3fe",
-      "bodyBytecodeHash": "4eae74510e0ff5698dd9f3726d6b21ddd8195b0a4172f2693184df5b4a63539f",
-      "localBytecodeHash": "1ba8d7b40b023bde0dffdd1c60ba230ad97bec035b501d2426f5a75950c1921f",
-      "deployedBytecodeHash": "1ba8d7b40b023bde0dffdd1c60ba230ad97bec035b501d2426f5a75950c1921f"
+      "address": "0xC89Ce4735882C9F0f0FE26686c53074E09B0D550",
+      "constructorCode": "6101fb610030600b82828239805160001a6073146000811461002057610022565bfe5b5030600052607381538281f3fe",
+      "bodyBytecodeHash": "7b822dacd69b9877b972ebdd7eca9b70d1effe1342b12badcbedbca9d2504a22",
+      "localBytecodeHash": "2a8b64b5dddc435ae2075955faec68eecb82ea680eb09a57b12fe52fed3bff85",
+      "deployedBytecodeHash": "2a8b64b5dddc435ae2075955faec68eecb82ea680eb09a57b12fe52fed3bff85"
     }
   },
   "proxies": {
@@ -122,7 +133,7 @@
       {
         "address": "0x254dffcd3277C0b1660F6d42EFbB754edaBAbC2B",
         "version": "0.1.0",
-        "implementation": "0x5b1869D9A4C187F2EAa108f3062412ecf0526b24"
+        "implementation": "0xD833215cBcc3f914bD1C9ece3EE7BF8B14f841bb"
       }
     ]
   },
